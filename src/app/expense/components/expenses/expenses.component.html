@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="col">
+        <div id="expenses-shared">
+            <div class="image-user-expenses">
+                <img src="{{url + 'get-image-user/md9Pi0r9WKVIn6qJY0lNdd1y.jpg'}}" />
+            </div>
+            <div class="suma">
+                {{amount_jorge}} €
+            </div>
+            <div *ngFor="let expense of expenses" class="item-expense">
+                <div *ngIf="expense.user.name === 'Jorge'">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <p class="date">{{expense.date | date: 'dd/MM/yyy'}}</p>
+                            <div class="expense">
+                                <p class="name-expense">{{expense.name}}</p>
+                                <p class="amount"><strong>{{expense.amount}} €</strong></p>
+                                <p class="description">{{expense.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="expenses-shared">
+            <div class="image-user-expenses">
+                <img src="{{url + 'get-image-user/g0v0gOL0itIsok9y2E1IB1IF.jpg'}}"/>
+            </div>
+            <div class="suma">
+                {{amount_marta}}
+            </div>
+            <div *ngFor="let expense of expenses" class="item-expense">
+                <div *ngIf="expense.user.name === 'Marta'">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <p class="date">{{expense.date | date: 'dd/MM/yyy'}}</p>
+                            <div class="expense">
+                                <p class="name-expense">{{expense.name}}</p>
+                                <p class="amount"><strong>{{expense.amount}} €</strong></p>
+                                <p class="description">{{expense.description}}</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

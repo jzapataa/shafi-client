@@ -1,7 +1,24 @@
-<div class="col-lg-12">
+<div class="col-lg-8">
 
-  <h2 class="h2-strong">{{title}}</h2>
-
-  <h2 style="color:white;">ULTIMOS MOVIMIENTOS</h2>
-
+  <div id="expenses">
+      <div *ngFor="let expense of expenses" class="item-expense">
+          <div class="panel panel-default">
+              <div class="panel-body">
+                  <div class="image-user pull-left">
+                        <img src="{{url + 'get-image-user/' +expense.user.image }}" *ngIf="expense.user.image" />
+                  </div>
+                  <p class="date">{{expense.date | date: 'dd/MM/yyy'}}</p>
+                  <div class="expense">
+                    <p class="name-user">{{expense.user.name + ' ' + expense.user.surname}}</p><br/>
+                    <p class="name-expense">{{expense.name}}</p>
+                    <p class="amount"><strong>{{expense.amount}} €</strong></p>
+                    <p class="description">{{expense.description}}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="center">
+      <a [routerLink]="['/gastos/agregar']" class="btn btn-green center">Añadir gasto</a>
+  </div>
 </div>

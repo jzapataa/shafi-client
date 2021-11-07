@@ -26,13 +26,24 @@
   margin: 0px auto;
 }
 
+.col{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
 .label-green {
   color: #03ed96;
   font-size: 16px;
 }
 
 body {
-  background-color: #293039 !important;
+  background-color: #f5f5f5 !important;
 }
 
 .active {
@@ -71,9 +82,131 @@ body {
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
   background-color: #169e6c !important;
+} 
+
+.navigation .avatar{
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-top: 9px;
+  margin-right: 2px;
 }
 
-.navbar-center {
+.navigation .avatar img{
+  height: auto;
+  width: 38px;
 }
 
 /*Formu*/
+
+
+/*GASTOS*/
+.item-expense .image-user{
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.item-expense .image-user img{
+  width: 80px;
+}
+
+.image-user{
+  display: flex;
+  margin: 0 auto;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.image-user img{
+  width: 80px;
+}
+
+.image-user-expenses{
+  display: flex;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.image-user-expenses img{
+  width: 150px;
+}
+
+#expenses-shared{
+  margin: 10px;
+  width: 50%;
+}
+
+.suma{
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#expenses-shared .item-expense .expense .name-expense {
+  width: 100%;
+  font-size: 25px;
+  display: inline-block;
+  text-align: center;
+  text-transform: lowercase;
+}
+#expenses-shared .item-expense .expense .name-expense:first-letter {
+  text-transform: uppercase !important;
+}
+
+.item-expense .expense{
+  width: 100%;
+  margin-top: 11px;
+}
+
+.item-expense .expense .name-user{
+  margin-top: -10px;
+  margin-left: 100px;
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #293039;
+}
+
+.item-expense .expense .name-expense{
+  font-size: 22px;
+  color: #293039;
+}
+
+.item-expense .expense .amount{
+  font-size: 18px;
+  color: #293039;
+}
+
+.item-expense .expense .description{
+  font-size: 16px;
+  color: #293039;
+}
+
+.btn-green{
+  color: #fff;
+  background-color: #03ed96;
+  border-color: #03ed96;
+}
+
+.btn-green:hover {
+  color: #fff !important;
+  background-color: #169e6c;
+  border-color: #169e6c;
+}
+
+.date{
+  display: flex;
+  justify-content: right;
+}

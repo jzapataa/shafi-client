@@ -15,13 +15,17 @@
         </a>
       </li>
       <li>
-        <a href="#">
-          <span class="glyphicon glyphicon-home"></span>
+        <a [routerLink]="['/gastos']"
+           [routerLinkActive]="['active']">
+          <span class="glyphicon glyphicon-euro"></span>
+          Gastos
         </a>
       </li>
       <li>
-        <a href="#">
-          <span class="glyphicon glyphicon-home"></span>
+        <a [routerLink]="['/history']"
+           [routerLinkActive]="['active']">
+          <span class="glyphicon glyphicon-calendar"></span>
+          Historico
         </a>
       </li>
     </ul>
@@ -47,7 +51,7 @@
     <ul class="nav navbar navbar-nav navbar-right"
         *ngIf="identity">
       <li class="avatar">
-
+        <img src="{{ url + 'get-image-user/' + identity.image }}" *ngIf="identity && identity.image" />
       </li>
       <li class="dropdown">
         <a class="dropdown-toggle"

@@ -10,6 +10,9 @@ import { LoginComponent } from './login/component/login.component';
 import { RegisterComponent } from './register/component/register.component';
 import { FormsModule } from '@angular/forms';
 import { UserEditComponent } from './user/components/user-edit/user-edit.component';
+import { ExpenseCreateComponent } from './expense/components/expense-create/expense-create.component';
+import { ExpensesComponent } from './expense/components/expenses/expenses.component';
+import { HistoryComponent } from './history/component/history.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { UserEditComponent } from './user/components/user-edit/user-edit.compone
     HeaderComponent,
     LoginComponent,
     RegisterComponent,
-    UserEditComponent
+    UserEditComponent,
+    ExpenseCreateComponent,
+    ExpensesComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

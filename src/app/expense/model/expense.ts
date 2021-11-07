@@ -5,7 +5,8 @@ export class Expense {
     public _id: string,
     public name: string,
     public amount: number,
-    public date: string,
+    public description: string,
+    public date: Date,
     public user: User
   ) {}
 }
